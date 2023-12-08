@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('/images/foret.jpg') center center fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;  
+    background-color: rgba(red, green, blue, alpha); 
+}
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+#charlie-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+}
+
+#charlie {
+    width: 50px;
+    height: 70px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    transform: rotate(60deg) translateX(-50%);
+    position: relative;
+    z-index: 2; 
+}
+
+#charlie:hover {
+    transform: scale(5) rotate(60deg) translateX(-50%);
+}
+
+#popup {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.text-box {
+    margin: 10px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
